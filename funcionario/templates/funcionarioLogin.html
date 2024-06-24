@@ -1,0 +1,56 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+  <link rel="stylesheet" href="{% static 'funcionarioLogin/css/styles.css' %}">
+</head>
+<body>
+  <div class="container login-container">
+    <div class="row">
+      <div class="col-md-6 col-md-offset-3">
+        <div class="login-form">
+          <img src="/static/funcionarioLogin/css/utils/logo.png" alt="Descrição da Imagem">
+          <form id="login-form">
+            <div class="form-group">
+              <label for="cpf">CPF:</label>
+              <input type="text" id="cpf" name="cpf" class="form-control" required>
+            </div>
+            <div class="form-group">
+              <label for="senha">senha:</label>
+              <input type="password" id="senha" name="password" class="form-control" required>
+            </div>
+            <div class="checkbox">
+              <label>
+                <input type="checkbox" id="remember-me"> Lembra-se de mim
+              </label>
+            </div>
+            <button type="submit" class="btn btn-lg btn-primary btn-block">Entrar</button>
+          </form>
+          <p id="error-message" style="color:red;"></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    document.getElementById('login-form').addEventListener('submit', function(event) {
+      event.preventDefault(); 
+      
+      var cpf = document.getElementById('cpf').value;
+      var senha = document.getElementById('senha').value;
+      var errorMessage = document.getElementById('error-message');
+      
+      
+      if (cpf === '12345678900' && senha === '12345678900') { 
+        window.location.href = 'funcionarioPrincipalhtml';
+      } else {
+        errorMessage.textContent = 'CPF ou Senha incorretos.';
+      }
+    });
+  </script>
+</body>
+</html>
