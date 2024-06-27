@@ -8,6 +8,6 @@ class Reserva(models.Model):
     data = models.DateField()
     hora = models.TimeField()
     numero_pessoas = models.IntegerField()
-    ocasiao_especial = models.BooleanField()
+    ocasiao_especial = models.TextField(max_length=30)
     comentarios = models.TextField(max_length=1000)
 

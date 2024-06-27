@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reserva confirmada!</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            text-align: center;
+            margin: 50px;
+        }
+        .container {
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            max-width: 400px;
+            margin: 0 auto;
+        }
+        h2 {
+            color: #333333;
+        }
+        .details {
+            text-align: left;
+            margin-bottom: 20px;
+        }
+        .details p {
+            margin: 10px 0;
+        }
+        .button {
+            background-color: #e9a209;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin-top: 20px;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+        .button:hover {
+            background-color: #e9a209;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Confirmação de Reserva</h2>
+        <p>Olá {{ nome }}! Sua reserva foi feita com sucesso para o dia {{ data }} às {{ hora }}.</p>
+        
+        <div class="details">
+            <p><strong>Número de Pessoas:</strong> {{ pessoas }}</p>
+            <p><strong>Contato:</strong> {{ email }}</p>
+        </div>
+        <button class="button" onclick="location.href='/'">Confirmar</button>
+    </div>
+</body>
+</html>

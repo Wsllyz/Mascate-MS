@@ -9,7 +9,8 @@
 </head>
 <body>
       <img src="\static\principal\css\utils\logo2.ico" alt="Mascate">
-    <form action="/enviar-reserva" method="post">
+    <form id="reserva_form" method="post" action="{% url 'reserva_process' %}">
+        {% csrf_token %}
         <fieldset>
             <legend>Informações Pessoais:</legend>
             <label for="nome">Nome Completo:</label>
@@ -29,12 +30,6 @@
             <label for="pessoas">Número de Pessoas:</label>
             <input type="number" id="pessoas" name="pessoas" required><br><br>
             <label for="mesa">Preferência de Mesa:</label>
-            <select id="mesa" name="mesa">
-                <option value="interna">Mesa interna</option>
-                <option value="externa">Mesa externa</option>
-                <option value="janela">Mesa perto da janela</option>
-                <option value="sem_preferencia">Sem preferência</option>
-            </select><br><br>
         </fieldset>
 
         <fieldset>
@@ -46,14 +41,6 @@
                 <option value="casamento">Aniversário de Casamento</option>
                 <option value="negocios">Reunião de Negócios</option>
                 <option value="outro">Outro</option>
-            </select><br><br>
-            <label for="requisitos">Requisitos Alimentares:</label>
-            <select id="requisitos" name="requisitos">
-                <option value="aniversario">Não</option>
-                <option value="sem_gluten">Sem glúten</option>
-                <option value="vegetariano">Vegetariano</option>
-                <option value="vegano">Vegano</option>
-                <option value="alergias">Alergias alimentares</option>
             </select><br><br>
             <label for="comentarios">Comentários Adicionais:</label><br>
             <textarea id="comentarios" name="comentarios" rows="4" cols="50"></textarea><br><br>
