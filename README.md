@@ -1,8 +1,7 @@
 <h1 align="center"> Mascate MS </h1>
 
-<!-- A imagem precisa ter um formato de banner como a do seguinte repositório: https://github.com/facebook/docusaurus -->
 <div align="center">
-  <img src="https://img.freepik.com/fotos-gratis/elemento-de-design-de-textura-de-fundo-branco-em-branco_53876-132773.jpg">
+  <img src="readmeImages\bannerMascate.png">
 </div>
 
 # Índice
@@ -34,6 +33,23 @@
 
 # Funcionalidades
 
+O mascateMS conta com funções que visam otimizar o gerenciamento das reservas e filas do restaurante Mascate. Algumas delas são:
+
+- Criar uma nova reserva
+- Confirmar reservas
+- Visualizar as reservas confirmadas
+- Visualizar as mesas e horários disponíveis
+- Adicionar algum cliente a fila de espera
+- Visualizar os clientes na fila de espera (Ordenados por dia e horário)
+
+
 # Desenvolvedores
-<!-- Será preciso criar um diretório contendo as imagens dos integrantes do grupo para que eu consiga colocá-las aqui através do src. Farei o push request dessa pasta depois-->
-# Licença
+
+<img src="readmeImages\Weslley.jpg" alt="Weslley Santana" style="border-radius: 50%; width: 180px; height: 180px;">
+<img src="readmeImages\gabriela.png" alt="Gabriela Maia" style="border-radius: 50%; width: 180px; height: 180px;">
+<img src="readmeImages\camila.png" alt="Camila Santos" style="border-radius: 50%; width: 180px; height: 180px;">
+<img src="readmeImages\flavia.png" alt="Flavia Paloma" style="border-radius: 50%; width: 180px; height: 180px;">
+<img src="readmeImages\louise.png" alt="Louise Ferreira" style="border-radius: 50%; width: 180px; height: 180px;">
+<img src="readmeImages\maria.jpg" alt="Maria Lima" style="border-radius: 50%; width: 180px; height: 180px;">
+<img src="readmeImages\tairone.jpg" alt="Tairone Albuquerque" style="border-radius: 50%; width: 180px; height: 180px;">
+<img src="readmeImages\rafael.jpg" alt="Rafael Phaçanha" style="border-radius: 50%; width: 180px; height: 180px;">
