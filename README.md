@@ -40,16 +40,19 @@ O mascateMS conta com funções que visam otimizar o gerenciamento das reservas 
 - Visualizar as reservas confirmadas
 - Visualizar as mesas e horários disponíveis
 - Adicionar algum cliente a fila de espera
-- Visualizar os clientes na fila de espera (Ordenados por dia e horário)
+- Visualizar os clientes na fila de espera (ordenados por dia e horário)
 
 
 # Desenvolvedores
 
-<img src="readmeImages\Weslley.jpg" alt="Weslley Santana" style="border-radius: 50%; width: 180px; height: 180px;">
-<img src="readmeImages\gabriela.png" alt="Gabriela Maia" style="border-radius: 50%; width: 180px; height: 180px;">
-<img src="readmeImages\camila.png" alt="Camila Santos" style="border-radius: 50%; width: 180px; height: 180px;">
-<img src="readmeImages\flavia.png" alt="Flavia Paloma" style="border-radius: 50%; width: 180px; height: 180px;">
-<img src="readmeImages\louise.png" alt="Louise Ferreira" style="border-radius: 50%; width: 180px; height: 180px;">
-<img src="readmeImages\maria.jpg" alt="Maria Lima" style="border-radius: 50%; width: 180px; height: 180px;">
-<img src="readmeImages\tairone.jpg" alt="Tairone Albuquerque" style="border-radius: 50%; width: 180px; height: 180px;">
-<img src="readmeImages\rafael.jpg" alt="Rafael Phaçanha" style="border-radius: 50%; width: 180px; height: 180px;">
+<div style="display: inline_block; display: flex">
+  <img align="center" alt="Django-icon" height="60" width="80" src="readmeImages\Weslley.jpg">
+  <img align="center" alt="Javascript-icon" height="60" width="80" src="readmeImages\gabriela.png">
+  <img align="center" alt="html-icon" height="60" width="80" src="readmeImages\camila.png">
+  <img align="center" alt="css-icon" height="60" width="80" src="readmeImages\flavia.png">
+  <img align="center" alt="css-icon" height="60" width="80" src="readmeImages\louise.png">
+  <img align="center" alt="css-icon" height="60" width="80" src="readmeImages\maria.png">
+  <img align="center" alt="css-icon" height="60" width="80" src="readmeImages\louise.png">
+  <img align="center" alt="css-icon" height="60" width="80" src="readmeImages\tairone.png">
+  <img align="center" alt="css-icon" height="60" width="80" src="readmeImages\rafael.png">
+</div>
