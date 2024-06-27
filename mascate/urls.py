@@ -7,6 +7,6 @@ from funcionario.views import adms
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', home),
-    path('adms/', adms),
+    path('adms/', include('funcionario.urls')),
     path('reserva/', include('principal.urls'))
 ]

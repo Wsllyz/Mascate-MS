@@ -1,0 +1,32 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil do Funcionário</title>
+    <link rel="stylesheet" href="{% static '/funcionarioLogin/css/styles.css' %}">
+    
+</head>
+<body>
+  <header>
+      <img src="/static/funcionarioLogin/css/utils/logo.png" alt="Logo do site" id="logo-img" class="logo-class outra-classe">
+  </header>
+    <div class="profil-container">
+        <div class="perfil-header">
+            <img src="\static\funcionarioLogin\css\utils\fotofuncionaria.jpg" alt="Foto do Funcionário" class="foto-perfil" id="foto-perfil">
+            <h1 id="employee-name">Brenda Fernandes Monteiro</h1>
+        </div>
+        <div class="detalhes">
+            <p><strong>ID:</strong> <span id="employee-id">12345</span></p>
+            <p><strong>Email:</strong> <span id="employee-email">BrendaMonteiros@empresa.com</span></p>
+            <p><strong>Telefone:</strong> <span id="employee-phone">(11) 1234-5678</span></p>
+            <p><strong>Data de Admissão:</strong> <span id="employee-hire-date">01/01/2020</span></p>
+        </div>
+        <div class="button-container">
+            <button class="button" onclick="location.href='{% url 'funcionarioPrincipal' %}'">Reservas</button>
+            <button class="button" onclick="location.href='{% url 'adms' %}'">Sair</button>
+        </div>
+    </div>
+</body>
+</html>

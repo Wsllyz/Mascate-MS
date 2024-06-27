@@ -14,7 +14,8 @@
       <div class="col-md-6 col-md-offset-3">
         <div class="login-form">
           <img src="/static/funcionarioLogin/css/utils/logo.png" alt="Descrição da Imagem">
-          <form id="login-form">
+          <form id="login-form" method="post" action="{% url 'process_form' %}">
+            {% csrf_token %}
             <div class="form-group">
               <label for="cpf">CPF:</label>
               <input type="text" id="cpf" name="cpf" class="form-control" required>
@@ -35,22 +36,3 @@
       </div>
     </div>
   </div>
-
-  <script>
-    document.getElementById('login-form').addEventListener('submit', function(event) {
-      event.preventDefault(); 
-      
-      var cpf = document.getElementById('cpf').value;
-      var senha = document.getElementById('senha').value;
-      var errorMessage = document.getElementById('error-message');
-      
-      
-      if (cpf === '12345678900' && senha === '12345678900') { 
-        window.location.href = 'funcionarioPrincipalhtml';
-      } else {
-        errorMessage.textContent = 'CPF ou Senha incorretos.';
-      }
-    });
-  </script>
-</body>
-</html>
